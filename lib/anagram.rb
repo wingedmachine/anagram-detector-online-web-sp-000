@@ -17,6 +17,6 @@ class Anagram
       anagram_detector[sorted_candidate] = [] if !anagram_detector.keys.include?(sorted_candidate)
       anagram_detector[sorted_candidate] << candidate
     end
-    anagram_detector[word]
+    anagram_detector[word] || []
   end
 end
